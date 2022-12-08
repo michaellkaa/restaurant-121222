@@ -17,7 +17,7 @@ header {
     margin: 0;
     text-align: center;
     text-transform: uppercase;
-    font-family: var(--second-font);
+    font-family: var(--first-font);
     position: fixed;
     top: 0%;
     flex-wrap: nowrap;
@@ -170,6 +170,6 @@ footer {
     background-color: var(--third-color);
     border-radius: 50%;
     pointer-events: none;
-    z-index: 20;
+    z-index: 99999999;
     
 }

@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{ 
+    margin: auto;
+}
+
+header {
+    height: 15vh;
+}
+
+.navigace {
+    padding-top: 60px;
+    padding-bottom: 0%;
+    padding-right: 70px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--first-font);
+    position: fixed;
+    top: 0%;
+    flex-wrap: nowrap;
+    height: 60px;
+    width: 99%;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    background: #90171770;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 90;
+    filter: contrast(200%);
+}
+
+
+.navigace a {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    color: var(--second-color);
+    text-decoration: none;
+    margin: 0 30px 0 30px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.navigace a:hover {
+    color: var(--third-color);
+}
+
+.pizzafoto {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.pizzafoto img {
+    margin: 0 200px 50px 200px;
+    width: 900px;
+    height: auto;
+}
+
+.kontakt p {
+    color: var(--first-color);
+    opacity: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--fourth-color);
+    padding-top: 40px;
+    padding-bottom: 5px;
+    height: auto;
+}
+
+#circle {
+    position: absolute;
+    width: 4px;
+    height: 5px;
+    margin: -2.5px 0 0 -2.5px;
+    border: 6px solid #901717;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999999;
+    
+}
