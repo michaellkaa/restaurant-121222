@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Ibarra+Real+Nova&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Ibarra+Real+Nova&family=Nanum+Myeongjo&family=PT+Serif&family=Playfair+Display&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Baskervville&family=Bodoni+Moda:opsz@6..96&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Ibarra+Real+Nova&family=Marcellus&family=Nanum+Myeongjo&family=Oranienbaum&family=PT+Serif&family=Playfair+Display&family=Unna&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navigace">
+            <nav class="nav">
+                <a href="index.html">domů</a>
+                <a href="index.html">about</a> 
+                <a href="">menu</a>
+                <a href="foto.html">fotogalerie</a>
+                <a href="">kontakt</a>
+            </nav>
+        </div>
+    </header>
+ <main>
+    <div class="menu">
+    <h1>Menu</h1>
+    <div class="menutable">
+        
+    <table>
+        
+        <tr id="druhy">
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+       
+        <tr>
+            <td>Margherita</td>
+            <td>tomato, mozzarella, rajče</td>
+            <td>139,-</td>
+        </tr>
+        <tr>
+            <td>Šunková</td>
+            <td>tomato, mozzarella, šunka</td>
+            <td>159,-</td>
+        </tr>
+        <tr>
+            <td>Žampionová</td>
+            <td>tomato, mozzarella, šunka, žampiony</td>
+            <td>149,-</td>
+        </tr>
+        <tr>
+            <td>Hawai</td>
+            <td>tomato, mozzarella, šunka, ananas</td>
+            <td>149,-</td>
+        </tr>
+    </table>
+    </div><img src="/pizza.png" alt="">
+</div>
+ </main>
+
+
+
+
+
+<footer>
+    <div class="kontakt"><p>@Michaelka 2022</p></div>
+</footer>
+
+
+<div id="circle" class="circle"></div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let mousePosX = 0,
+            mousePosY = 0,
+            mouseCircle = document.getElementById('circle');
+
+        document.onmousemove = (e) => {
+            mousePosX = e.pageX;
+            mousePosY = e.pageY;
+        }
+
+        let delay = 5,
+            revisedMousePosX = 0,
+            revisedMousePosY = 0;
+
+        function delayMouseFollow() {
+            requestAnimationFrame(delayMouseFollow);
+
+            revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+            revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+
+            mouseCircle.style.top = revisedMousePosY + 'px';
+            mouseCircle.style.left = revisedMousePosX + 'px';
+        }
+        delayMouseFollow();
+    });
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
