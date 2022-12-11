@@ -4,6 +4,8 @@ html {
 
 body{ 
     margin: auto;
+    background-color: var(--first-color);
+   
 }
 
 header {
