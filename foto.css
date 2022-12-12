@@ -52,6 +52,8 @@ header {
     display: grid;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: -200px;
 }
 
 .pizzafoto img {
@@ -59,6 +61,27 @@ header {
     width: 900px;
     height: auto;
 }
+
+.rajce {
+    z-index: -1;
+    position: relative;
+    top: 600px;
+    left: 180px;
+    margin: 0%;
+    filter: blur(2px);
+}
+
+.rajce2 {
+    z-index: -1;
+    position: relative;
+    top: 1800px;
+    left: 950px;
+    margin: 0%;
+    filter: blur(2px);
+    transform: rotate(-30deg);
+}
+
+
 
 .kontakt p {
     color: var(--first-color);
@@ -71,6 +94,7 @@ footer {
     padding-top: 40px;
     padding-bottom: 5px;
     height: auto;
+    
 }
 
 #circle {
